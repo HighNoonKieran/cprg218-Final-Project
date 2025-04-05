@@ -1,0 +1,33 @@
+* { /* True for the whole page */
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+nav {
+    background-color: darkblue;
+    padding: 1.5rem;
+}
+a { 
+    margin:1rem;
+    padding: 0.5rem;
+    color: aliceblue;
+    border: 1px solid white;
+    text-decoration: none;
+}
+a:hover {
+    background-color: blue;
+}
+header {
+    background-color: lightskyblue;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+#logo {
+    max-width: 100%;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+
+}
