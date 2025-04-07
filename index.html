@@ -8,12 +8,13 @@
 </head>
 <body>
     <header>
-        <nav>
+        <button id="nav-toggle">&#9776;</button> 
+        <nav id="main-menu">
             <a href="index.html">
             Homepage 
             </a>
             <a href="rooms.html">
-            Guest Rooms  <!--To the guests page-->
+            Rooms  <!--To the guests page-->
             </a>
             <a href="activities.html">
             Activities  <!--To the activities page-->
@@ -29,11 +30,15 @@
             </a>
         </nav>
         <img id="logo" src="logo.svg" height="" width="" alt="Shangri La Beach Resort Logo"> 
-        <h1>Shangri La Beach Resort - Your Dream Getaway</h1>
+        <h1 id="hero">Shangri La Beach Resort - Your Dream Getaway</h1>
+        <p id="temperature"></p>
+        <p id="feels"></p>
     </header>
     <main id="home">
-        <h2>Escape to Paradise!</h2>
-        <p>Indulge in luxury and breathtaking views at Shangri La Beach Resort.</p>
+        <section class="head">
+            <h2>Escape to Paradise!</h2>
+            <p>Indulge in luxury and breathtaking views at Shangri La Beach Resort.</p>
+        </section>
         <section id="about">
             <h2>Experience Unforgettable Moments</h2>
             <h3>Private Beach Acccess</h3>
@@ -50,23 +55,31 @@
             <h2>Our Luxurious Accommodations</h2>
             <h3>Ocean View Deluxe Room</h3>
             <p>Enjoy stunning ocean views from your private balcony.</p>
-            <button>View Details</button>
+            <a href="rooms.html"><button>View Details</button>
+            </a>
             <h3>Beachfront Suite</h3>
             <p>Step directly onto the sand from your spacious suite.</p>
-            <button>View Details</button>
+            <a href="rooms.html"><button>View Details</button>
+            </a>            
             <h3>Garden View Family Room</h3>
             <p>Perfect for families, with ample space and garden views.</p>
-            <button>View Details</button>
+            <a href="rooms.html"><button>View Details</button>
+            </a>        
         </section>
 
         <section id="testimonials">
             <h2>What Our Guests are Saying</h2>
-            <p>"Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking."    - Sarah M.
+            <p>"Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking."   - Sarah M.
             </p>
             <p>"The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible." - John B.
             </p>
-            <button>Read More Testimonials</button>
+            
+            <a href="testimonials.html"><button>Read More Testimonials</button></a>
         </section>
     </main>
+    <footer>
+        <p>&copy; Kieran Bunse | All Rights Reserved | <span id="footerY"></span></p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>

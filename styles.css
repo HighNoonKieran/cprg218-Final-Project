@@ -6,28 +6,138 @@
 nav {
     background-color: darkblue;
     padding: 1.5rem;
+    text-align: center;
 }
 a { 
-    margin:1rem;
+    margin:0.5rem;
     padding: 0.5rem;
     color: aliceblue;
     border: 1px solid white;
     text-decoration: none;
 }
-a:hover {
+#home a {
+    border: none;
+}
+header a:hover {
     background-color: blue;
 }
 header {
-    background-color: lightskyblue;
-    text-align: center;
+    background-color: skyblue;
+    position: relative;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    text-align: center;
 }
+ul {
+    list-style-type: none;
+}
+section {
+    padding: 1rem 0;
+}
+main {
+    text-align: center;
+    padding: 1rem 1rem;
+    background-color: lightskyblue;
+    }
 #logo {
     max-width: 100%;
 }
 #home {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2rem ;
+}
+#home section:first-of-type {
+grid-column: span 2;
+padding-bottom: 2rem;
+}
+#home section:last-of-type {
+    grid-column: span 2;
+    margin-top: 2rem;
+}
+#about {
+    border: 2px solid darkorchid;
+    padding: 1rem 0;
+}
+#rooms {
+    border: 2px solid red;
 
+}
+#testimonials {
+    border: 2px solid pink;
+    padding: 1rem 0;
+}
+#guest-rooms {
+    display: flex;
+    gap: 2rem;
+    text-align: left;
+}
+#guest-rooms li {
+    list-style-type:disc;
+}
+#guest-rooms p {
+    text-align: center;
+}
+footer {
+    background-color: darkblue;
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+}
+header button {
+    background:none;
+    border:none;
+    color: darkblue;
+    font-size: 200%;
+    cursor:pointer;
+    display: none;
+}
+header button:focus {
+    color:white;
+    border: 1px solid white;
+}
+header li {
+    list-style-type: none;
+    display: inline;
+    margin-right:1.5rem;
+}
+header li:last-of-type {
+    margin-right: 0;
+}
+nav li a:hover {
+    color: lightcyan;
+    text-decoration: underline;
+}
+@media screen and (max-width:400px){
+    #home {
+        display:inline;
+    }
+}
+@media screen and (max-width:740px){
+    header button {
+        display:block;
+    }
+    nav {
+        position: absolute;
+        top:10%;
+        left:0%;
+        width:100%;
+        z-index: 100;
+        background-color: blue;
+        flex-direction: column;
+        display: none;
+    }
+    nav.active{
+        display:flex;
+        flex-direction: column;
+    }
+    nav li {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+    li a {
+        display: block;
+        padding: 1rem;
+        margin: 1rem;;
+    }
 }
