@@ -10,6 +10,9 @@ fetch(
 	console.log(data);
     console.log(data.main.temp);
     temperature.textContent = "Temperature in Cancun: "+data.main.temp+"\u00B0C";
+    lowtemp.textContent = "Low Temperature: "+data.main.temp_min+"\u00B0C";;
+    hightemp.textContent = "High Temperature: "+data.main.temp_max+"\u00B0C";;
+    feels.textContent = "Feels Like: "+data.main.feels_like+"\u00B0C";;
 });
 
 const navToggle = document.getElementById('nav-toggle'); 
