@@ -46,11 +46,19 @@ ul {
 main {
     text-align: center;
     }
-.bed {
+
+main img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+main section {
+    background-color: #8FD5A6;
     border: 2px solid #3A405A;
+    padding: 4rem 1rem 0 1rem;
+    border-radius: 30px;
+    margin: 2rem;
+    height: 100%;
 }
 #weather {
     display: flex;
@@ -72,9 +80,6 @@ main {
 #about h3{
     margin-top: 1rem;
 }
-#testimonials p{
-    margin: 1rem;
-} 
 #review {
     background-color: #8FD5A6;
     margin: 1rem;
@@ -113,13 +118,6 @@ main {
     margin: 1rem;
     padding-bottom: 2rem;
 }
-main section {
-    background-color: #8FD5A6;
-    border: 2px solid #3A405A;
-    padding: 1rem;
-    margin: 1rem;
-    height: 100%;
-}
 #title {
     background-color: #3A405A;
     color:white;
@@ -127,7 +125,7 @@ main section {
     padding: 2rem;
 }
 #guest-rooms img {
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 #guest-rooms li {
     list-style-type:none;
@@ -137,7 +135,8 @@ main section {
     margin: 0rem;
 }
 #nav-toggle {
-    margin-left: 1rem;
+    margin: 0 1rem;
+    margin-left:auto
 }
 #guest-rooms h2{
     padding-bottom: 1rem;
@@ -159,32 +158,50 @@ main section {
     margin: 1rem;
 }
 #eating img {
-    padding-right: 1rem;
+    margin-top: 2rem;
+    padding-right: 2rem;
+    border: none;
 }
 #spa-treatment img {
-    padding-right: 1rem;
+    margin-top: 2rem;
+    padding-right: 2rem;
+    border: none;
+}
+#guest-rooms img {
+    margin-top: 2rem;
+    padding-right: 2rem;
+    border: none;
+}
+#review p{
+    margin: 1.5rem
+}
+#spa-treatment section {
+    height:fit-content;
+    padding: 4rem 1rem;
+    margin: 1rem;
+    max-height: max-content;
+}
+#spa-treatment li {
+    margin-top: 1rem;
+}
+#spa-treatment section:last-of-type {
+    grid-column: span 2;
+}
+.treatment {
+    max-width: 66%;
+    max-height: 66%;
+    margin-left: 1rem;
+    border-radius: 60px;
 }
 .food {
     width: 100%;
     height: 100%;
     object-fit: cover;
     margin-top: 1rem;
+    border-radius: 60px;
 }
-#spa-treatment {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin: 1rem;
-}
-#spa-treatment section:last-of-type {
-    grid-column: span 2;
-
-}
-.treatment {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-top: 1rem;
+.bed {
+    border-radius: 60px;
 }
 footer {
     background-color: #3A405A;
@@ -214,7 +231,13 @@ nav li a:hover {
     color: lightcyan;
     text-decoration: underline;
 } 
-@media screen and (max-width:460px){
+#excursions  section{
+    padding: 2rem;
+}
+#excursions li {
+    margin: 1rem;
+}
+@media screen and (max-width:505px){
         #logo {
             padding-bottom: 5rem;
         }
@@ -231,12 +254,6 @@ nav li a:hover {
             margin-bottom: 1rem;
             border-bottom: 1px solid #3A405A;
         }
-        #home section:first-of-type {
-            padding-bottom: 0;
-            }
-        #home section:last-of-type {
-            margin-top: 0;
-        }
         #guest-rooms {
             display:block;
         }
@@ -249,12 +266,6 @@ nav li a:hover {
         #guest-rooms section h2 {
             margin-bottom: 1rem;
             border-bottom: 1px solid #3A405A;
-        }
-        #guest-rooms section:first-of-type {
-            padding-bottom: 0;
-            }
-        #guest-rooms section:last-of-type {
-            margin-top: 0;
         }
         #eating {
             display:inline;
@@ -269,15 +280,41 @@ nav li a:hover {
             margin-bottom: 1rem;
             border-bottom: 1px solid #3A405A;
         }
-        #eating section:first-of-type {
-            padding-bottom: 0;
-            }
-        #eating section:last-of-type {
-            margin-top: 0;
-        }
         .food {
             padding: 0 1rem 1rem 1rem;
             border: none;
+        }
+        .bed {
+            padding-left: 2rem;
+        }
+        .treatment {
+            max-width: 100%;
+            max-height: 100%;
+            margin-left: 1rem;
+            border-radius: 60px;
+        }
+        .food {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-top: 1rem;
+            border-radius: 60px;
+        }
+        .bed {
+            border-radius: 60px;
+        }
+        #spa-treatment {
+            display:inline;
+        }
+        #spa-treatment section {
+            color: black;
+            padding: 1rem;
+            border: 1px solid #3A405A;
+            margin-bottom: 1rem;
+        }
+        #spa-treatment section h2 {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #3A405A;
         }
 }
 @media screen and (max-width:650px){
@@ -286,7 +323,7 @@ nav li a:hover {
     }
     nav {
         position: absolute;
-        top:10%;
+        top:12%;
         left:0%;
         width:100%;
         z-index: 100;

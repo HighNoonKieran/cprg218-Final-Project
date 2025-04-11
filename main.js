@@ -3,8 +3,7 @@ const d = new Date();
 fYear.textContent = d.getFullYear();
 
 fetch(
-'https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=625a907c29f418b5627de1371aef0f30&units=metric'
-)
+'https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=625a907c29f418b5627de1371aef0f30&units=metric')
 .then(response => response.json())
 .then(data => {
 	console.log(data);
