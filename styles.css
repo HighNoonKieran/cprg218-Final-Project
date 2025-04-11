@@ -51,6 +51,7 @@ main img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    align-items: center;
 }
 main section {
     background-color: #8FD5A6;
@@ -74,6 +75,7 @@ main section {
     background-size: 100%;
     width:100%;
     height: 100%;
+    padding-top: 0.5rem;
     padding-bottom: 11rem;
     object-fit: cover;
 }
@@ -202,6 +204,8 @@ main section {
 }
 .bed {
     border-radius: 60px;
+    padding-right: 2rem;
+    margin: 1rem 0;
 }
 footer {
     background-color: #3A405A;
@@ -298,9 +302,6 @@ nav li a:hover {
             height: 100%;
             object-fit: cover;
             margin-top: 1rem;
-            border-radius: 60px;
-        }
-        .bed {
             border-radius: 60px;
         }
         #spa-treatment {
